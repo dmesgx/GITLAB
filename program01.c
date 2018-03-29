@@ -12,13 +12,13 @@ void main()
   scanf("%d", &YourLotteryNo); 
   while (YourLotteryNo != 0) 
   { 
-    won = 1; 
-    for (i=1;i<N && !won; i++) 
+    won = 0; 
+    for (i=0;i<N && !won; i++) 
     {
        if (YourLotteryNo == WinLotteryNo[i]) 
        {
           printf("Congratulations You Won %8.2f baht\n", WinAmount[i]); 
-          won = 1;
+          won = 0;
        }
     }
     if (!won) 
