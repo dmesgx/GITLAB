@@ -12,8 +12,8 @@ void main()
   scanf("%d", &YourLotteryNo); 
   while (YourLotteryNo != 0) 
   { 
-    won = 0; 
-    for (i=0;i<N && !won; i++) 
+    won = 1; 
+    for (i=1;i<N && !won; i++) 
     {
        if (YourLotteryNo == WinLotteryNo[i]) 
        {
